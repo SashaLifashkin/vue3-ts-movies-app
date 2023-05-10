@@ -103,11 +103,11 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
     <div class="list-pages-container">
       <div
         class="list-container"
-        :style="{ '--li-viewed-movies-count': moviesCountOnScreen }"
+        :style="{ '--li-viewed-movies-count': isLaptop ? moviesCountOnScreen : '' }"
       >
         <ul
           :style="{
-            '--li-count': moviesPagesList.length,
+            '--li-count': isLaptop ? moviesPagesList.length : '',
             transition: isLaptop ? `transform ${600}ms ease` : '',
             transform: isLaptop ? `translateX(${shift}px)` : '',
           }"
@@ -298,15 +298,15 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
 
   .list {
     /* display: flex;
-    flex-wrap: wrap; */
-    /* margin-bottom: -16px; */
-    /* margin-right: -14px; */
-    /* height: auto; */
-    padding: 40px 16px 0 16px;
+    flex-wrap: wrap;
+    margin-bottom: -16px;
+    margin-right: -14px;
+    height: auto; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
     gap: 16px 14px;
+    padding: 40px 16px 0 16px;
   }
 }
 </style>
