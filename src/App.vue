@@ -5,26 +5,28 @@ import MovieDetails from './components/MovieDetails.vue'
 import MoviesList from './components/MoviesList.vue'
 import { getMovies } from './api/api'
 
-const serverData = ref<MoviesPage>({
-  pages: 0,
-  total: 0,
-  results: [],
-})
-const selectedMovie = ref<Movie>({
-  id: 0,
-  title: '',
-  description: '',
-  release_year: 0,
-  mpa_rating: 'G',
-  imdb_rating: 0,
-  duration: 0,
-  poster: '',
-  bg_picture: '',
-  genres: [],
-  directors: [],
-  writers: [],
-  stars: [],
-})
+// const serverData = ref<MoviesPage>({
+//   pages: 0,
+//   total: 0,
+//   results: [],
+// })
+// const selectedMovie = ref<Movie>({
+//   id: 0,
+//   title: '',
+//   description: '',
+//   release_year: 0,
+//   mpa_rating: 'G',
+//   imdb_rating: 0,
+//   duration: 0,
+//   poster: '',
+//   bg_picture: '',
+//   genres: [],
+//   directors: [],
+//   writers: [],
+//   stars: [],
+// })
+const serverData = ref<MoviesPage | null>(null)
+const selectedMovie = ref<Movie | null>(null)
 const isMovieTabDetail = ref<boolean>(false)
 const isHideButtonClick = ref<boolean>(false)
 const screenWidth = ref<number>(window.innerWidth)
@@ -57,7 +59,7 @@ onMounted(async () => {
   window.addEventListener('resize', handleResize)
   serverData.value = await getMovies('/api/v1/movies/')
 
-  if (selectedMovie.value.id === 0) {
+  if (selectedMovie.value === null) {
     selectedMovie.value = serverData.value.results[0]
   }
 })
@@ -68,22 +70,18 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <main
-    v-if="serverData.results.length !== 0"
-    :class="{
-      'movies-laptop-page': screenWidth >= 1152,
-      'tablet-landscape-page': screenWidth < 1152 && screenWidth >= 900,
-      'tablet-portrait-page': screenWidth < 900
-    }"
-  >
+  <!-- <main v-if="serverData.results.length !== 0" class="movies"> -->
+  <main v-if="serverData !== null" class="movies">
     <MoviesList
+      v-if="serverData.results.length !== 0"
       :is-portrait="screenWidth < 900"
       :is-laptop="screenWidth >= 1152"
       :movies-list="serverData.results"
-      :selected-movie-id="selectedMovie.id"
+      :selected-movie-id="selectedMovie !== null ? selectedMovie.id : serverData.results[0].id"
       @movie-select="onMovieSelect"
     />
     <MovieDetails
+      v-if="selectedMovie !== null"
       :class="{ 'movie-resize-hide': screenWidth < 900
         && (isMovieTabDetail === false && isHideButtonClick === false) ? true : false
       }"
@@ -100,38 +98,5 @@ onUnmounted(() => {
 </template>
 
 <style>
-.movies-laptop-page {
-  position: relative;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #161616;
-}
-
-.tablet-landscape-page {
-  position: relative;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #161616;
-}
-
-.tablet-portrait-page {
-  position: relative;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #161616;
-}
-
-.movie-resize-hide {
-  transform: translateX(-100%);
-}
-
-.hide {
-  display: none;
-}
+/* @import './assets/blocks/movies.scss' */
 </style>

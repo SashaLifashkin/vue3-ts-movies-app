@@ -1,0 +1,41 @@
+@mixin onLaptop {
+  @media (min-width: 1152px) {
+    @content;
+  }
+}
+
+@mixin onTab {
+  @media (min-width: 400px) and (max-width: 1152px) {
+    @content;
+  }
+}
+
+@mixin viewTabLandscape {
+  @media (min-width: 900px) and (max-width: 1152px) {
+    @content;
+  }
+}
+
+@mixin viewTabPortrait {
+  @media (min-width: 400px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin font-properties($font-name, $weight, $size, $height, $color) {
+  font-family: $font-name;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin font-krona-one-properties($font-name, $weight, $size, $height, $color) {
+  font-family: $font-name;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}

@@ -1,0 +1,132 @@
+.list-control {
+  @include onLaptop {
+    position: absolute;
+    width: 1108px;
+    height: 290px;
+    left: calc(50% - 1108px/2);
+    bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 16px;
+
+    &-button {
+      width: 34px;
+      height: 34px;
+      align-self: center;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(47px);
+  
+      &-arrow {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 20px/2);
+        top: calc(50% - 20px/2);
+      }
+    }
+  }
+
+  @include viewTabLandscape {
+    width: 40%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  @include viewTabPortrait {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.list-pages-container {
+  @include onLaptop {
+    width: calc((#{$li-viewed-count} + 1) * #{$li-width});
+    height: 290px;
+    display: flex;
+    flex-direction: row;
+
+    .hide {
+      display: none;
+    }
+
+    &-view-more {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: $li-width;
+      height: 235px;
+      align-self: flex-end;
+
+      &-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 68px;
+        height: 50px;
+        gap: 8px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &-plus {
+          width: 24px;
+          height: 24px;
+        }
+
+        &-text {
+          @include font-properties('Rubik', 400, 14px, 17px, #fff);
+        }
+      }
+    }
+  }
+}
+
+.list-container {
+  width: calc(var(--li-viewed-movies-count) * #{$li-width});
+  overflow: hidden;
+
+  &-ul {
+    display: grid;
+    list-style: none;
+    padding: 40px 40px 0 16px;
+
+    @include onLaptop {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      width: calc(var(--li-count) * #{$li-width});
+      height: 100%;
+      padding: 0;
+    }
+
+    @include viewTabLandscape {
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @include viewTabPortrait {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 16px 14px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+
+      @include onLaptop {
+        width: #{$li-width};
+      }
+    }
+  }
+}

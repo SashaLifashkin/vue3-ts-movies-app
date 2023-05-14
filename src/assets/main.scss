@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Krona One', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/extends';
+
+@import './blocks/movies.scss';
+@import './blocks/movieslist.scss';
+@import './blocks/movielistcard.scss';
+@import './blocks/moviedetails.scss'
