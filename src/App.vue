@@ -35,7 +35,7 @@ const handleResize = (): void => {
   screenWidth.value = window.innerWidth
 }
 const onMovieSelect = (movieId: number): void => {
-  const findSelectedMovie = serverData.value.results.find(movie => movie.id === movieId);
+  const findSelectedMovie = serverData.value?.results.find(movie => movie.id === movieId);
 
   if (findSelectedMovie !== undefined) {
     selectedMovie.value = findSelectedMovie
