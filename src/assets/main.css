@@ -27,10 +27,6 @@
   }
 }
 
-.movie-resize-hide {
-  transform: translateX(-100%);
-}
-
 .hide {
   display: none;
 }
@@ -46,23 +42,6 @@
     flex-direction: row;
     align-items: flex-end;
     gap: 16px;
-  }
-  .list-control-button {
-    width: 34px;
-    height: 34px;
-    align-self: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(47px);
-  }
-  .list-control-button-arrow {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: calc(50% - 10px);
-    top: calc(50% - 10px);
   }
 }
 @media (min-width: 900px) and (max-width: 1152px) {
@@ -82,6 +61,29 @@
     overflow-y: auto;
   }
 }
+.list-control-button {
+  display: none;
+}
+@media (min-width: 1152px) {
+  .list-control-button {
+    display: block;
+    width: 34px;
+    height: 34px;
+    align-self: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(47px);
+  }
+  .list-control-button-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+  }
+}
 
 @media (min-width: 1152px) {
   .list-pages-container {
@@ -93,6 +95,11 @@
   .list-pages-container .hide {
     display: none;
   }
+}
+.list-pages-container-view-more {
+  display: none;
+}
+@media (min-width: 1152px) {
   .list-pages-container-view-more {
     display: flex;
     flex-direction: column;
@@ -102,35 +109,34 @@
     height: 235px;
     align-self: flex-end;
   }
-  .list-pages-container-view-more-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    width: 68px;
-    height: 50px;
-    gap: 8px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .list-pages-container-view-more-button-plus {
-    width: 24px;
-    height: 24px;
-  }
-  .list-pages-container-view-more-button-text {
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #fff;
-  }
+}
+.list-pages-container-view-more-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 68px;
+  height: 50px;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list-pages-container-view-more-button-plus {
+  width: 24px;
+  height: 24px;
+}
+.list-pages-container-view-more-button-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
 }
 
 .list-container {
-  width: calc(var(--li-viewed-movies-count) * 144px);
   overflow: hidden;
 }
 .list-container-ul {
@@ -143,9 +149,11 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: calc(var(--li-count) * 144px);
+    width: calc(var(--li-viewed-movies-count) * 144px);
     height: 100%;
     padding: 0;
+    transition: transform 600ms ease;
+    transform: translateX(var(--shift));
   }
 }
 @media (min-width: 900px) and (max-width: 1152px) {
@@ -167,6 +175,7 @@
 @media (min-width: 1152px) {
   .list-container-ul-item {
     width: 144px;
+    min-width: 144px;
   }
 }
 
@@ -274,12 +283,10 @@
   }
 }
 
-.is-active {
-  transform: scale(1.18);
-  transform-origin: center center;
-}
 @media (min-width: 1152px) {
   .is-active {
+    transform: scale(1.18);
+    transform-origin: center center;
     box-shadow: 9px 4px 20px rgba(0, 0, 0, 0.28);
   }
 }
@@ -298,6 +305,7 @@
 @media (min-width: 400px) and (max-width: 900px) {
   .movie {
     position: absolute;
+    transform: translateX(-100%);
   }
 }
 .movie-block {
@@ -638,10 +646,17 @@
     transform: translateX(0);
     transition: transform 0.5s ease 0.3s;
   }
+}
+@media (min-width: 400px) and (max-width: 900px) {
   .movie-hide-click {
     transform: translateX(-100%);
     transition: transform 0.5s ease 0.3s;
   }
+}
+.movie-details-hide {
+  display: none;
+}
+@media (min-width: 400px) and (max-width: 900px) {
   .movie-details-hide {
     position: absolute;
     top: 30px;

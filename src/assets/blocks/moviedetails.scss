@@ -9,6 +9,7 @@
 
   @include viewTabPortrait {
     position: absolute;
+    transform: translateX(-100%);
   }
 
   &-block {
@@ -302,18 +303,24 @@
     }
   }
 
-  @include viewTabPortrait {
-    &-show {
+  &-show {
+    @include viewTabPortrait {
       transform: translateX(0);
       transition: transform 0.5s ease 0.3s;
     }
+  }
 
-    &-hide-click {
+  &-hide-click {
+    @include viewTabPortrait {
       transform: translateX(-100%);
       transition: transform 0.5s ease 0.3s;
     }
+  }
 
-    &-details-hide {
+  &-details-hide {
+    display: none;
+
+    @include viewTabPortrait {
       position: absolute;
       top: 30px;
       left: 18px;
@@ -325,6 +332,36 @@
       background-color: transparent;
     }
   }
+
+  // &-resize-hide {
+  //   @include viewTabPortrait {
+  //     transform: translateX(-100%);
+  //   }
+  // }
+
+  // @include viewTabPortrait {
+  //   &-show {
+  //     transform: translateX(0);
+  //     transition: transform 0.5s ease 0.3s;
+  //   }
+
+  //   &-hide-click {
+  //     transform: translateX(-100%);
+  //     transition: transform 0.5s ease 0.3s;
+  //   }
+
+  //   &-details-hide {
+  //     position: absolute;
+  //     top: 30px;
+  //     left: 18px;
+  //     display: block;
+  //     width: 32px;
+  //     height: 32px;
+  //     border: none;
+  //     cursor: pointer;
+  //     background-color: transparent;
+  //   }
+  // }
 }
 
 

@@ -1,0 +1,834 @@
+{
+  "total": 10,
+  "pages": 2,
+  "results": [
+    {
+      "id": 1,
+      "title": "Ozark",
+      "description": "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
+      "release_year": 2017,
+      "mpa_rating": "G",
+      "imdb_rating": 4.0,
+      "duration": 60,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/05399a41-657d-4538-9400-26fdf188ce17.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/6683f5be-666f-42c2-b690-0cf862b115d8.jpg",
+      "genres": [
+        {
+          "id": 1,
+          "title": "Crime TV Shows"
+        },
+        {
+          "id": 14,
+          "title": "Crime"
+        }
+      ],
+      "directors": [
+        {
+          "id": 1,
+          "first_name": "Jason",
+          "last_name": "Bateman"
+        }
+      ],
+      "writers": [
+        {
+          "id": 6,
+          "first_name": "Paul",
+          "last_name": "Kolsby"
+        }
+      ],
+      "stars": [
+        
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Queen's Gambit",
+      "description": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction",
+      "release_year": 2020,
+      "mpa_rating": "NC-17",
+      "imdb_rating": 8.6,
+      "duration": 395,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/2c949077-0a38-42e5-bf9e-b3ab664b2b9a.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/06557033-220b-4238-b3ff-2f8e62ce1fd2.jpg",
+      "genres": [
+        {
+          "id": 3,
+          "title": "TV Dramas"
+        }
+      ],
+      "directors": [
+        {
+          "id": 8,
+          "first_name": "Scott",
+          "last_name": "Frank"
+        }
+      ],
+      "writers": [
+        {
+          "id": 8,
+          "first_name": "Scott",
+          "last_name": "Frank"
+        },
+        {
+          "id": 9,
+          "first_name": "Allan",
+          "last_name": "Scott"
+        }
+      ],
+      "stars": [
+        {
+          "id": 7,
+          "first_name": "Anya",
+          "last_name": "Taylor-Joy"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mindhunters",
+      "description": "In the late 1970s two FBI agents expand criminal science by delving into the psychology of murder and getting uneasily close to all-too-real monsters.",
+      "release_year": 2017,
+      "mpa_rating": "R",
+      "imdb_rating": 8.6,
+      "duration": 60,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/1a584169-4c82-495a-8507-7cd57a8490c5.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/985cfdab-4ff5-4849-95e2-f79f5cbd9158.jpg",
+      "genres": [
+        {
+          "id": 14,
+          "title": "Crime"
+        },
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 16,
+          "title": "Thriller"
+        }
+      ],
+      "directors": [
+        {
+          "id": 14,
+          "first_name": "David",
+          "last_name": "Fincher"
+        }
+      ],
+      "writers": [
+        {
+          "id": 15,
+          "first_name": "John",
+          "last_name": "Douglas"
+        },
+        {
+          "id": 16,
+          "first_name": "Mark",
+          "last_name": "Olshaker"
+        }
+      ],
+      "stars": [
+        {
+          "id": 11,
+          "first_name": "Jonathan",
+          "last_name": "Groff"
+        },
+        {
+          "id": 12,
+          "first_name": "Holt",
+          "last_name": "McCallany"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Witcher",
+      "description": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+      "release_year": 2019,
+      "mpa_rating": "NC-17",
+      "imdb_rating": 8.2,
+      "duration": 59,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/59662b90-8da3-40c9-8839-a8d07d6e99ff.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/ab257e96-556f-47e1-813f-d6a71d7543f2.jpg",
+      "genres": [
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 17,
+          "title": "Action"
+        },
+        {
+          "id": 18,
+          "title": "Adventure"
+        }
+      ],
+      "directors": [
+        {
+          "id": 18,
+          "first_name": "Alik",
+          "last_name": "Sakharov"
+        },
+        {
+          "id": 19,
+          "first_name": "Charlotte",
+          "last_name": "Brändström"
+        }
+      ],
+      "writers": [
+        {
+          "id": 20,
+          "first_name": "Andrzej",
+          "last_name": "Sapkowski"
+        },
+        {
+          "id": 21,
+          "first_name": "Lauren",
+          "last_name": "Schmidt"
+        }
+      ],
+      "stars": [
+        {
+          "id": 22,
+          "first_name": "Henry",
+          "last_name": "Cavill"
+        },
+        {
+          "id": 23,
+          "first_name": "Freya",
+          "last_name": "Allan"
+        },
+        {
+          "id": 24,
+          "first_name": "Anya",
+          "last_name": "Chalotra"
+        },
+        {
+          "id": 25,
+          "first_name": "Mimi",
+          "last_name": "Ndiweni"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Chernobyl",
+      "description": "After reuniting with a lost love, firefighter Alexey retires to begin a new life — but the Chernobyl disaster suddenly plunges him back into danger.",
+      "release_year": 2019,
+      "mpa_rating": "PG-13",
+      "imdb_rating": 9.4,
+      "duration": 65,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/51788d45-fdb8-4bb5-b584-1f65aad8ac22.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/beeaa6a9-5f3f-4426-83f2-4615164e5707.jpg",
+      "genres": [
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 16,
+          "title": "Thriller"
+        },
+        {
+          "id": 19,
+          "title": "History"
+        }
+      ],
+      "directors": [
+        {
+          "id": 26,
+          "first_name": "Johan",
+          "last_name": "Renck"
+        }
+      ],
+      "writers": [
+        {
+          "id": 27,
+          "first_name": "Craig",
+          "last_name": "Mazin"
+        }
+      ],
+      "stars": [
+        {
+          "id": 28,
+          "first_name": "Jessie",
+          "last_name": "Buckley"
+        },
+        {
+          "id": 29,
+          "first_name": "Jared",
+          "last_name": "Harris"
+        },
+        {
+          "id": 30,
+          "first_name": "Stellan",
+          "last_name": "Skarsgård"
+        },
+        {
+          "id": 31,
+          "first_name": "Adam",
+          "last_name": "Nagaitis"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Squid Game",
+      "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
+      "release_year": 2021,
+      "mpa_rating": "R",
+      "imdb_rating": 8.0,
+      "duration": 61,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/d4a5986d-8878-44d0-9b45-58f7296377ea.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/82648962-5cb6-40d9-b125-3e289e8eab17.jpg",
+      "genres": [
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 17,
+          "title": "Action"
+        },
+        {
+          "id": 20,
+          "title": "Mystery"
+        }
+      ],
+      "directors": [
+        {
+          "id": 32,
+          "first_name": "Hwang",
+          "last_name": "Dong-hyuk"
+        }
+      ],
+      "writers": [
+        {
+          "id": 33,
+          "first_name": "Hwang",
+          "last_name": "Dong-hyuk"
+        }
+      ],
+      "stars": [
+        {
+          "id": 34,
+          "first_name": "Lee",
+          "last_name": "Jung-jae"
+        },
+        {
+          "id": 35,
+          "first_name": "Park",
+          "last_name": "Hae-soo"
+        },
+        {
+          "id": 36,
+          "first_name": "Masoud",
+          "last_name": "Sepahi"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Sherlock",
+      "description": "In this updated take on Sir Arthur Conan Doyle's beloved mystery tales, the eccentric sleuth prowls the streets of modern London in search of clues.",
+      "release_year": 2010,
+      "mpa_rating": "PG",
+      "imdb_rating": 9.1,
+      "duration": 93,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/864f97a7-4b52-417e-816e-5b2abd63264a.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/9d456cda-7125-4fdb-b933-5d5254b40908.jpg",
+      "genres": [
+        {
+          "id": 14,
+          "title": "Crime"
+        },
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 20,
+          "title": "Mystery"
+        }
+      ],
+      "directors": [
+        {
+          "id": 37,
+          "first_name": "Paul",
+          "last_name": "McGuigan"
+        },
+        {
+          "id": 38,
+          "first_name": "Nick",
+          "last_name": "Hurran"
+        }
+      ],
+      "writers": [
+        {
+          "id": 39,
+          "first_name": "Mark",
+          "last_name": "Gatiss"
+        },
+        {
+          "id": 40,
+          "first_name": "Steven",
+          "last_name": "Moffat"
+        }
+      ],
+      "stars": [
+        {
+          "id": 41,
+          "first_name": "Benedict",
+          "last_name": "Cumberbatch"
+        },
+        {
+          "id": 42,
+          "first_name": "Martin",
+          "last_name": "Freeman"
+        },
+        {
+          "id": 43,
+          "first_name": "Una",
+          "last_name": "Stubbs"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Formula 1: Drive to Survive",
+      "description": "Drivers, managers and team owners live life in the fast lane — both on and off the track — during each cutthroat season of Formula 1 racing.",
+      "release_year": 2019,
+      "mpa_rating": "PG",
+      "imdb_rating": 8.6,
+      "duration": 59,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/726bc109-59c7-4c7b-a9e8-6ea4ca816a3c.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/a51f1a9d-0f79-4268-a5cd-90584c82d35a.jpg",
+      "genres": [
+        {
+          "id": 21,
+          "title": "Documentry"
+        },
+        {
+          "id": 22,
+          "title": "Sport"
+        }
+      ],
+      "directors": [
+        {
+          "id": 44,
+          "first_name": "Martin",
+          "last_name": "Webb"
+        },
+        {
+          "id": 45,
+          "first_name": "Nick",
+          "last_name": "Hardie"
+        }
+      ],
+      "writers": [
+        {
+          "id": 46,
+          "first_name": "James",
+          "last_name": "Routh"
+        }
+      ],
+      "stars": [
+        {
+          "id": 47,
+          "first_name": "Lewis",
+          "last_name": "Hamilton"
+        },
+        {
+          "id": 48,
+          "first_name": "Daniel",
+          "last_name": "Ricciardo"
+        },
+        {
+          "id": 49,
+          "first_name": "Max",
+          "last_name": "Verstappen"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Ragnarok",
+      "description": "In a Norwegian town poisoned by pollution and rattled by melting glaciers, the End Times feel all too real. It’ll take a legend to battle an old evil.",
+      "release_year": 2020,
+      "mpa_rating": "G",
+      "imdb_rating": 7.5,
+      "duration": 46,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/da198337-14cb-4190-b660-934c349b0fde.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/1fae04ad-1149-42c1-8d1e-d5439ca58585.jpg",
+      "genres": [
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 17,
+          "title": "Action"
+        },
+        {
+          "id": 23,
+          "title": "Fantasy"
+        }
+      ],
+      "directors": [
+        {
+          "id": 50,
+          "first_name": "Mogens",
+          "last_name": "Hagedorn"
+        }
+      ],
+      "writers": [
+        {
+          "id": 51,
+          "first_name": "Emilie",
+          "last_name": "Lebech Kaae"
+        }
+      ],
+      "stars": [
+        {
+          "id": 52,
+          "first_name": "David",
+          "last_name": "Stakston"
+        },
+        {
+          "id": 53,
+          "first_name": "Jonas",
+          "last_name": "Strand Gravli"
+        },
+        {
+          "id": 54,
+          "first_name": "Herman",
+          "last_name": "Tømmeraas"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "The Last Czars",
+      "description": "When social upheaval sweeps Russia in the early 20th century, Czar Nicholas II resists change, sparking a revolution and ending a dynasty.",
+      "release_year": 2019,
+      "mpa_rating": "NC-17",
+      "imdb_rating": 7.5,
+      "duration": 43,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/7244153c-7f7d-46b1-91cf-24afd618c52e.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/e538ac09-3aff-4452-9c8c-6c2513016480.jpg",
+      "genres": [
+        
+      ],
+      "directors": [
+        {
+          "id": 55,
+          "first_name": "Adrian",
+          "last_name": "McDowall"
+        },
+        {
+          "id": 56,
+          "first_name": "Gareth",
+          "last_name": "Tunley"
+        }
+      ],
+      "writers": [
+        {
+          "id": 57,
+          "first_name": "Christopher",
+          "last_name": "Bell"
+        },
+        {
+          "id": 58,
+          "first_name": "Dana",
+          "last_name": "Fainaru"
+        }
+      ],
+      "stars": [
+        {
+          "id": 59,
+          "first_name": "Robert",
+          "last_name": "Jack"
+        },
+        {
+          "id": 60,
+          "first_name": "Susanna",
+          "last_name": "Herbert"
+        },
+        {
+          "id": 61,
+          "first_name": "Ben",
+          "last_name": "Cartwright"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Ozark",
+      "description": "A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years to appease a drug boss.",
+      "release_year": 2017,
+      "mpa_rating": "G",
+      "imdb_rating": 4.0,
+      "duration": 60,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/05399a41-657d-4538-9400-26fdf188ce17.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/6683f5be-666f-42c2-b690-0cf862b115d8.jpg",
+      "genres": [
+        {
+          "id": 1,
+          "title": "Crime TV Shows"
+        },
+        {
+          "id": 14,
+          "title": "Crime"
+        }
+      ],
+      "directors": [
+        {
+          "id": 1,
+          "first_name": "Jason",
+          "last_name": "Bateman"
+        }
+      ],
+      "writers": [
+        {
+          "id": 6,
+          "first_name": "Paul",
+          "last_name": "Kolsby"
+        }
+      ],
+      "stars": [
+        
+      ]
+    },
+    {
+      "id": 12,
+      "title": "The Queen's Gambit",
+      "description": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction",
+      "release_year": 2020,
+      "mpa_rating": "NC-17",
+      "imdb_rating": 8.6,
+      "duration": 395,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/2c949077-0a38-42e5-bf9e-b3ab664b2b9a.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/06557033-220b-4238-b3ff-2f8e62ce1fd2.jpg",
+      "genres": [
+        {
+          "id": 3,
+          "title": "TV Dramas"
+        }
+      ],
+      "directors": [
+        {
+          "id": 8,
+          "first_name": "Scott",
+          "last_name": "Frank"
+        }
+      ],
+      "writers": [
+        {
+          "id": 8,
+          "first_name": "Scott",
+          "last_name": "Frank"
+        },
+        {
+          "id": 9,
+          "first_name": "Allan",
+          "last_name": "Scott"
+        }
+      ],
+      "stars": [
+        {
+          "id": 7,
+          "first_name": "Anya",
+          "last_name": "Taylor-Joy"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Mindhunters",
+      "description": "In the late 1970s two FBI agents expand criminal science by delving into the psychology of murder and getting uneasily close to all-too-real monsters.",
+      "release_year": 2017,
+      "mpa_rating": "R",
+      "imdb_rating": 8.6,
+      "duration": 60,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/1a584169-4c82-495a-8507-7cd57a8490c5.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/985cfdab-4ff5-4849-95e2-f79f5cbd9158.jpg",
+      "genres": [
+        {
+          "id": 14,
+          "title": "Crime"
+        },
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 16,
+          "title": "Thriller"
+        }
+      ],
+      "directors": [
+        {
+          "id": 14,
+          "first_name": "David",
+          "last_name": "Fincher"
+        }
+      ],
+      "writers": [
+        {
+          "id": 15,
+          "first_name": "John",
+          "last_name": "Douglas"
+        },
+        {
+          "id": 16,
+          "first_name": "Mark",
+          "last_name": "Olshaker"
+        }
+      ],
+      "stars": [
+        {
+          "id": 11,
+          "first_name": "Jonathan",
+          "last_name": "Groff"
+        },
+        {
+          "id": 12,
+          "first_name": "Holt",
+          "last_name": "McCallany"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "The Witcher",
+      "description": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+      "release_year": 2019,
+      "mpa_rating": "NC-17",
+      "imdb_rating": 8.2,
+      "duration": 59,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/59662b90-8da3-40c9-8839-a8d07d6e99ff.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/ab257e96-556f-47e1-813f-d6a71d7543f2.jpg",
+      "genres": [
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 17,
+          "title": "Action"
+        },
+        {
+          "id": 18,
+          "title": "Adventure"
+        }
+      ],
+      "directors": [
+        {
+          "id": 18,
+          "first_name": "Alik",
+          "last_name": "Sakharov"
+        },
+        {
+          "id": 19,
+          "first_name": "Charlotte",
+          "last_name": "Brändström"
+        }
+      ],
+      "writers": [
+        {
+          "id": 20,
+          "first_name": "Andrzej",
+          "last_name": "Sapkowski"
+        },
+        {
+          "id": 21,
+          "first_name": "Lauren",
+          "last_name": "Schmidt"
+        }
+      ],
+      "stars": [
+        {
+          "id": 22,
+          "first_name": "Henry",
+          "last_name": "Cavill"
+        },
+        {
+          "id": 23,
+          "first_name": "Freya",
+          "last_name": "Allan"
+        },
+        {
+          "id": 24,
+          "first_name": "Anya",
+          "last_name": "Chalotra"
+        },
+        {
+          "id": 25,
+          "first_name": "Mimi",
+          "last_name": "Ndiweni"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Chernobyl",
+      "description": "After reuniting with a lost love, firefighter Alexey retires to begin a new life — but the Chernobyl disaster suddenly plunges him back into danger.",
+      "release_year": 2019,
+      "mpa_rating": "PG-13",
+      "imdb_rating": 9.4,
+      "duration": 65,
+      "poster": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/51788d45-fdb8-4bb5-b584-1f65aad8ac22.jpg",
+      "bg_picture": "https://mocat-live.fra1.digitaloceanspaces.com/media/public/uploads/beeaa6a9-5f3f-4426-83f2-4615164e5707.jpg",
+      "genres": [
+        {
+          "id": 15,
+          "title": "Drama"
+        },
+        {
+          "id": 16,
+          "title": "Thriller"
+        },
+        {
+          "id": 19,
+          "title": "History"
+        }
+      ],
+      "directors": [
+        {
+          "id": 26,
+          "first_name": "Johan",
+          "last_name": "Renck"
+        }
+      ],
+      "writers": [
+        {
+          "id": 27,
+          "first_name": "Craig",
+          "last_name": "Mazin"
+        }
+      ],
+      "stars": [
+        {
+          "id": 28,
+          "first_name": "Jessie",
+          "last_name": "Buckley"
+        },
+        {
+          "id": 29,
+          "first_name": "Jared",
+          "last_name": "Harris"
+        },
+        {
+          "id": 30,
+          "first_name": "Stellan",
+          "last_name": "Skarsgård"
+        },
+        {
+          "id": 31,
+          "first_name": "Adam",
+          "last_name": "Nagaitis"
+        }
+      ]
+    }
+  ]
+}

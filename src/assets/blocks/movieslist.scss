@@ -9,8 +9,28 @@
     flex-direction: row;
     align-items: flex-end;
     gap: 16px;
+  }
 
-    &-button {
+  @include viewTabLandscape {
+    width: 40%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  @include viewTabPortrait {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &-button {
+    display: none;
+
+    @include onLaptop {
+      display: block;
       width: 34px;
       height: 34px;
       align-self: center;
@@ -29,21 +49,6 @@
       }
     }
   }
-
-  @include viewTabLandscape {
-    width: 40%;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  @include viewTabPortrait {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-  }
 }
 
 .list-pages-container {
@@ -56,8 +61,12 @@
     .hide {
       display: none;
     }
+  }
 
-    &-view-more {
+  &-view-more {
+    display: none;
+
+    @include onLaptop {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -65,35 +74,34 @@
       width: $li-width;
       height: 235px;
       align-self: flex-end;
+    }
 
-      &-button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        width: 68px;
-        height: 50px;
-        gap: 8px;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
+    &-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      width: 68px;
+      height: 50px;
+      gap: 8px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
 
-        &-plus {
-          width: 24px;
-          height: 24px;
-        }
+      &-plus {
+        width: 24px;
+        height: 24px;
+      }
 
-        &-text {
-          @include font-properties('Rubik', 400, 14px, 17px, #fff);
-        }
+      &-text {
+        @include font-properties('Rubik', 400, 14px, 17px, #fff);
       }
     }
   }
 }
 
 .list-container {
-  width: calc(var(--li-viewed-movies-count) * #{$li-width});
   overflow: hidden;
 
   &-ul {
@@ -105,9 +113,12 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-      width: calc(var(--li-count) * #{$li-width});
+      // width: calc(var(--li-count) * #{$li-width});
+      width: calc(var(--li-viewed-movies-count) * #{$li-width});
       height: 100%;
       padding: 0;
+      transition: transform 600ms ease;
+      transform: translateX(var(--shift));
     }
 
     @include viewTabLandscape {
@@ -126,6 +137,7 @@
 
       @include onLaptop {
         width: #{$li-width};
+        min-width: 144px;
       }
     }
   }

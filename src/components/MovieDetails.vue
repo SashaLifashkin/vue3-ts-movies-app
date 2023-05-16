@@ -6,7 +6,6 @@ const props = defineProps<{
   selectedMovie: Movie,
   isMovieTabDetail: boolean,
   isHideButtonClick: boolean,
-  isPortrait: boolean,
 }>()
 const emit = defineEmits<{ (e: 'movieDetailHide'): void }>()
 
@@ -26,15 +25,14 @@ const emit = defineEmits<{ (e: 'movieDetailHide'): void }>()
   <section
     class="movie"
     :class="{
-      'movie-show': isPortrait && props.isMovieTabDetail,
-      'movie-hide-click': isPortrait && props.isHideButtonClick,
+      'movie-show': props.isMovieTabDetail,
+      'movie-hide-click': props.isHideButtonClick,
     }"
     ref="movieTag"
   >
     <button
       type="button"
       class="movie-details-hide"
-      :class="{ hide: !isPortrait }"
       @click="emit('movieDetailHide')"
     >
       <img src="../assets/images/vector-left.svg" alt="Hide button"/>
@@ -108,5 +106,4 @@ const emit = defineEmits<{ (e: 'movieDetailHide'): void }>()
 </template>
 
 <style>
-
 </style>

@@ -4,6 +4,7 @@ import type { Movie, MoviesPage } from './interfaces/interfaces'
 import MovieDetails from './components/MovieDetails.vue'
 import MoviesList from './components/MoviesList.vue'
 import { getMovies } from './api/api'
+import movies from './data/movies.json'
 
 // const serverData = ref<MoviesPage>({
 //   pages: 0,
@@ -57,7 +58,8 @@ watch(
 
 onMounted(async () => {
   window.addEventListener('resize', handleResize)
-  serverData.value = await getMovies('/api/v1/movies/')
+  // serverData.value = await getMovies('/api/v1/movies/')
+  serverData.value = movies as MoviesPage
 
   if (selectedMovie.value === null) {
     selectedMovie.value = serverData.value.results[0]
@@ -74,21 +76,15 @@ onUnmounted(() => {
   <main v-if="serverData !== null" class="movies">
     <MoviesList
       v-if="serverData.results.length !== 0"
-      :is-portrait="screenWidth < 900"
-      :is-laptop="screenWidth >= 1152"
       :movies-list="serverData.results"
       :selected-movie-id="selectedMovie !== null ? selectedMovie.id : serverData.results[0].id"
       @movie-select="onMovieSelect"
     />
     <MovieDetails
       v-if="selectedMovie !== null"
-      :class="{ 'movie-resize-hide': screenWidth < 900
-        && (isMovieTabDetail === false && isHideButtonClick === false) ? true : false
-      }"
       :selected-movie="selectedMovie"
       :is-movie-tab-detail="isMovieTabDetail"
       :is-hide-button-click="isHideButtonClick"
-      :is-portrait="screenWidth < 900"
       @movie-detail-hide="() => {
         isMovieTabDetail = false
         isHideButtonClick = true

@@ -7,8 +7,6 @@ import { splitIntoChunks } from '../functions/function'
 type Props = {
   moviesList: Movie[];
   selectedMovieId: number;
-  isPortrait: boolean;
-  isLaptop: boolean;
 }
 
 const props = defineProps<Props>()
@@ -95,7 +93,6 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
     <button
       type="button"
       class="list-control-button"
-      :class="{ hide: !props.isLaptop }"
       @click="prev(liWidth, shiftStep)"
     >
       <img src="../assets/images/arrow-prev.svg" alt="Arrow-next" class="list-control-button-arrow" />
@@ -103,14 +100,13 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
     <div class="list-pages-container">
       <div
         class="list-container"
-        :style="{ '--li-viewed-movies-count': isLaptop ? moviesCountOnScreen : '' }"
+        :style="{ '--li-viewed-movies-count': moviesCountOnScreen }"
       >
         <ul
           class="list-container-ul"
           :style="{
-            '--li-count': isLaptop ? moviesPagesList.length : '',
-            transition: isLaptop ? `transform ${600}ms ease` : '',
-            transform: isLaptop ? `translateX(${shift}px)` : '',
+            '--li-count': moviesPagesList.length,
+            '--shift': `${shift}px`,
           }"
         >
           <li
@@ -120,7 +116,7 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
               ref="liRefs"
           >
             <MovieListCard
-              :selected-movie="props.selectedMovieId === movie.id && isLaptop"
+              :selected-movie="props.selectedMovieId === movie.id"
               :poster="movie.poster"
               :imdb-rating="movie.imdb_rating"
               :title="movie.title"
@@ -131,7 +127,7 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
       </div>
       <div
         class="list-pages-container-view-more"
-        :class="{ hide: !props.isLaptop || currentPage >= totalPages - 1 }"
+        :class="{ hide: currentPage >= totalPages - 1 }"
       >
         <button
           type="button"
@@ -146,7 +142,6 @@ const next = (widthItem: number, step: number, itemsListLength: number, itemsOnS
     <button
       type="button"
       class="list-control-button"
-      :class="{ hide: !props.isLaptop }"
       @click="next(liWidth, shiftStep, moviesPagesList.length, moviesCountOnScreen)"
     >
       <img src="../assets/images/arrow-next.svg" alt="Arrow-next" class="list-control-button-arrow" />

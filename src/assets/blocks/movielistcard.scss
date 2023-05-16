@@ -70,10 +70,9 @@
 }
 
 .is-active {
-  transform: scale(1.18);
-  transform-origin: center center;
-
   @include onLaptop {
+    transform: scale(1.18);
+    transform-origin: center center;
     box-shadow: 9px 4px 20px rgba(0, 0, 0, 0.28);
   }
 }
